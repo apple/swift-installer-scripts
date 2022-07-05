@@ -97,6 +97,13 @@ Package naming convention: `swiftlang-<VERSION>-<RELEASE>.<DIST>.<ARCH>.rpm`
 Package structure: `/repo/<OS>/releases/<OS_VERSION>/<ARCH>/`  
 Repository configuration: `/repo/<OS>/releases/<OS_VERSION>/swiftlang.repo`  
 
+### Deb Naming Convention:
+
+Package naming convention: `swiftlang-<VERSION>-<RELEASE>-<OS_VERSION>_<ARCH>.deb`  
+Package destination: `/repo/<OS>/pool/main/s/swiftlang/`  
+Index destination: `/repo/<OS>/dists/<OS_VERSION>/`  
+Repository configuration: `/repo/<OS>/dists/<OS_VERSION>/swiftlang.list`  
+
 
 #### Example
 
@@ -104,13 +111,17 @@ Repository configuration: `/repo/<OS>/releases/<OS_VERSION>/swiftlang.repo`
 ```
 /repo/centos/releases/8/x86_64/swiftlang-5.5.0-1.el8.x86_64.rpm
 /repo/centos/releases/8/aarch64/swiftlang-5.5.0-1.el8.aarch64.rpm
+/repo/ubuntu/pool/main/s/swiftlang/swiftlang-5.5.0-1-focal_amd64.deb
+/repo/ubuntu/pool/main/s/swiftlang/swiftlang-5.5.0-1-focal_arm64.deb
 ```
 
 * **Package URL:**  
 https://download.swift.org/repo/centos/releases/8/aarch64/swiftlang-5.5.0-1.el8.aarch64.rpm
+https://download.swift.org/repo/ubuntu/pool/main/s/swiftlang/swiftlang-5.5.0-1-focal_arm64.deb
 
 * **Repository configuration file URL:**  
 https://download.swift.org/repo/centos/releases/8/swiftlang.repo
+https://download.swift.org/repo/ubuntu/dists/focal/swiftlang.list
 
 ## Tasks
 
